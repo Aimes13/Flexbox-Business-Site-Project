@@ -385,7 +385,7 @@ header .mobile {
   }
 
   #macro, #property {
-    width: 22rem;
+    width: 100%;
   }
 }
 
