@@ -51,12 +51,6 @@ html {
     text-align: center;
 }
   
-.button {
-    border-radius: 4px;
-    background-color: midnightblue;
-    color: white;
-}
-  
 .image-container {
     overflow: hidden;
     max-width: 100%;
@@ -66,21 +60,13 @@ html {
     display: block;
 }
 
-h1 {
-    font-family: "Merriweather";
-    font-size: 3rem;
+span {
+    font-size: 3.8rem;
+    font-weight: lighter;
 }
-  
-@media only screen and (max-width: 760px) {
-  .main-content {
-    top: 2.5625rem;
-    display: inline-flex;
-    flex-flow: column;
-  }
 
-  h1 {
-    font-size: 2rem;
-  }
+h1 {
+  font-size: 2.5rem;
 }
 
 /* Header */
@@ -108,17 +94,10 @@ header .logo {
   height: 8rem;
   width: 40%;
   color: whitesmoke;
-  font-size: 4rem;
-  font-family: "Merriweather";
-  border: 1px solid white;
 }
 
 header .logo img {
   height: 8rem;
-}
-
-.desktop {
-  border: 1px solid white;
 }
 
 header nav ul {
@@ -134,7 +113,7 @@ nav li {
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   color: antiquewhite;
   text-decoration: none;
 }
@@ -150,230 +129,6 @@ nav a:visited    {
 
 header .mobile, .tablet, .companylogo {
   display: none;
-}
-
-/* Desktop */
-@media only screen and (max-width: 2000px) {
-  nav a {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and (max-width: 1700px) {
-  header .logo {
-    width: 45%;
-  }
-  
-  nav a {
-    font-size: 2.5rem;
-  }
-}
-
-/* Laptop */
-@media only screen and (max-width: 1500px) {
-  header {
-    width: 99%;
-  }
-
-  nav a {
-    font-size: 2.3rem;
-  }
-
-  header .logo, header .logo img {
-    font-size: 3.4rem;
-    height: 7rem;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  header {
-    width: 98.8%;
-  }
-
-  header .logo  {
-    font-size: 3.2rem;
-  }
-
-  nav a {
-    font-size: 2.1rem;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  header .logo, header .logo img  {
-    height: 6.5rem;
-    font-size: 3rem;
-  }
-
-  nav a {
-    font-size: 1.9rem;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  header .logo, header .logo img  {
-    height: 6.2rem;
-    font-size: 2.9rem;
-  }
-
-  nav a {
-    font-size: 1.6rem;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  header {
-    width: 98.6%;
-  }
-  
-  header .logo, header .logo img  {
-    height: 6rem;
-    font-size: 2.6rem;
-  }
-
-  nav a {
-    font-size: 1.4rem;
-  }
-}
-
-/*Tablet */
-@media only screen and (max-width: 1000px) {
-  header {
-    width: 98.4%;
-  }
-  
-  header .logo, header .logo img  {
-    height: 5.5rem;
-    font-size: 2.3rem;
-  }
-
-  nav a {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  header .logo, header .logo img  {
-    height: 5rem;
-    font-size: 2.2rem;
-  }
-
-  nav a {
-    font-size: 1.1rem;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  header .logo, header .logo img  {
-    height: 4.5rem;
-    font-size: 1.9rem;
-  }
-
-  nav a {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  header {
-    display: none;
-  }
-  
-  header .desktop, header .logo, header .tablet {
-    display: none;
-  }
-
-  .companylogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    border: 1px solid white;
-  }
-
-  .companylogo img {
-    width: 30%;
-  }
-
-  .tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    border: 1px solid white;
-  }
-
-  .tablet img {
-    width: 33%;
-
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  header .desktop, header .logo {
-    display: none;
-  }
-
-  header .mobile {
-    display: block;
-    width: 100%;
-  }
-  
-  header .content {
-    padding: .5rem 0;
-  }
-  
-  header .mobile ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding-left: 0;
-  }
-  
-  header .mobile li {
-    padding: 0;
-  }
-    
-  header .mobile img {
-    height: 4.5rem;
-    width: 100%;
-    padding-top: 1rem;
-  }
-
-  header .mobile .button {
-    padding: 1rem;
-    height: 5rem;
-    background-color: #f3f3f3;
-    line-height: 1.6;
-    color: black;
-  }
-}
-
-@media only screen and (max-width:450px) {
-  header .mobile {
-    display: none;
-  }
-  
-  header .content {
-    display: none;
-  }
-  
-  header .mobile ul {
-    display: none;
-  }
-  
-  header .mobile li {
-    display: none;
-  }
-    
-  header .mobile img {
-    display: none;
-  }
-
-  header .mobile .button {
-    display: none;
-  }
 }
 
 /* About Section */
@@ -425,51 +180,6 @@ header .mobile, .tablet, .companylogo {
   background-color: whitesmoke;
 }
 
-@media only screen and (max-width: 760px) {
-  .list li {
-    margin: 0 0.5rem;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  #about-section .center {
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    flex-flow: column;
-    align-content: center;
-    justify-content: center;
-  }
-
-  #about-section .quote {
-    font-size: 1.2rem;
-    text-align: center;
-    letter-spacing: 0.07rem;
-  }
-
-  #about-section span {
-    font-size: 1.3rem;
-  }
-
-  .list ul {
-    flex-wrap: wrap;
-    float: right;
-    justify-content: center;
-    margin: 2rem;
-    padding: 2rem 0;
-    width: auto;
-    height: auto;
-  }
-
-  .list li {
-    margin: 0 3rem 0.5rem;
-    width: 60%;
-    height: 3rem;
-    padding: 1rem;
-    font-size: 1.3rem;
-  }
-}
-
 /* Portfolio Section */
 #portfolio-section {
   position: relative;
@@ -480,23 +190,35 @@ header .mobile, .tablet, .companylogo {
   align-items: center;
 }
 
+.portfolio-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f3f3f3;
+}
+
  #box1, #box2, #box3 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.portfolio-box {
-  background-color: #f3f3f3;
+#box1 .feature {
+  height: 51rem;
 }
 
-.portfolio-box img {
-  width: 100%;
+#box2 .feature {
+  height: 36rem;
 }
 
 #box3 {
   width: 80%;
-  margin-left: 12rem;
+}
+
+.portfolio-box img {
+  width: 100%;
 }
 
 .feature {
@@ -513,7 +235,7 @@ header .mobile, .tablet, .companylogo {
   padding-bottom: 0.5rem;
 }
   
-.feature h2 {
+.feature h2, .feature h3 {
   font-size: 2.25rem;
   font-weight: bold;
   line-height: 1.2;
@@ -522,140 +244,7 @@ header .mobile, .tablet, .companylogo {
   
 .feature h3 {
   font-size: 1.8rem;
-  line-height: 1.2;
   font-weight: 300;
-  color: #4a4a4a;
-}
-
-/* Desktop */
-@media only screen and (max-width: 1800px) {
-  #box3 {
-    margin-left: 11rem;
-  }  
-}
-
-@media only screen and (max-width: 1700px) {
-  #box3 {
-    margin-left: 10.5rem;
-  }
-  
-  .feature h2 {
-    font-size: 2rem;
-  }
-
-  .feature h3 {
-    font-size: 1.6rem;
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  #box3 {
-    margin-left: 10rem;
-  }  
-}
-
-/* Laptop */
-@media only screen and (max-width: 1500px) {
-  #box3 {
-    margin-left: 9rem;
-  }
-  
-  .feature h2 {
-    font-size: 1.8rem;
-  }
-
-  .feature h3 {
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  #box3 {
-    margin-left: 8rem;
-  }
-  
-  #box1 .feature {
-    border: 1px solid red;
-    height: 42rem;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  #box1 .feature {
-    height: 40rem;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  #box1 .feature {
-    height: 36rem;
-  }
-
-  #box2 .feature {
-    height: 27rem;
-  }
-
-  #box3 {
-    margin-left: 7rem ;
-  }
-}
-
-/* Tablet */
-@media only screen and (max-width: 1000px) {
-  #box1 .feature {
-    height: 32rem;
-  }
-
-  #box2 .feature {
-    height: 24rem;
-  }
-
-  #box3 {
-    margin-left: 6rem ;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  #box3 {
-    margin-left: 5.5rem ;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  #box3 {
-    margin-left: 5rem ;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  #features-section {
-    flex-flow: row;
-    padding: 0;
-  }
-  
-  .feature {
-    margin: 0.5rem;
-    padding: 1.25rem 1rem 0 1rem;
-  }
-    
-  #macro, #property {
-    width: 17rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .portfolio-box {
-    flex-flow:column; 
-    justify-content: space-between;
-  }
-
-  .feature .image-container {
-    padding-bottom: 0;
-  }
-
-  #macro, #property {
-    width: 100%;
-  }
 }
 
 /* Photographer Section */
@@ -682,7 +271,6 @@ header .mobile, .tablet, .companylogo {
   padding: 1rem;
   width: 33%;
   font-size: 1.8rem;
-  border: 1px solid red;
 }
 
 #photographer-section img {
@@ -694,68 +282,6 @@ header .mobile, .tablet, .companylogo {
   padding: 0 1%;
   display: flex;
   justify-content: center;
-}
-
-/* Laptop */
-@media only screen and (max-width: 1200px) {
-  #photographer-section .center div {
-    font-size: 1.6rem;
-  }
-}
-
-/* Tablet */
-@media only screen and (max-width: 1000px) {
-  #photographer-section .center div {
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  #photographer-section .center div {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  #photographer-section .center {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  #photographer-section .center div {
-    margin: 1rem;
-    padding: 0.5rem;
-    width: 13rem;
-    font-size: 1.1rem;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #photographer-section .center {
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0.2rem;
-    margin-bottom: 0;
-  }
-
-  #photographer-section .center div {
-    padding: 0.5rem;
-    width: 70%;
-    font-size: 1.9rem;
-  }
-
-  .image-container {
-    max-height: 50%;
-    max-width: 50%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #photographer-section .center div {
-    font-size: 1.5rem;
-  }
 }
   
 /* Quotes Section */
@@ -769,115 +295,26 @@ header .mobile, .tablet, .companylogo {
 }
   
 #quotes-section .content {
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
   
 #quotes-section .quote {
   font-family: "Shadows Into Light Two", serif;
-  font-size: 1.875rem;
+  font-size: 1.8rem;
   line-height: 1.1;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   font-weight: bolder;
   color: #4a4a4a;
 }
   
 #quotes-section .quote-citation {
-  height: 8rem;
-}
-
-/* Laptop */
-@media only screen and (max-width: 1500px) {
-  #quotes-section .quote {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  #quotes-section .quote {
-    font-size: 1.3rem;
-  }
-
-  #quotes-section .quote-citation {
-    height: 5.5rem;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  #quotes-section .quote {
-    font-size: 1.2rem;
-  }
-
-  #quotes-section .quote-citation {
-    height: 4.5rem;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  #quotes-section .quote {
-    font-size: 1rem;
-  }
-}
-
-/* Tablet */
-@media only screen and (max-width: 1000px) {
-  #quotes-section .quote {
-    letter-spacing: 0.3rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  #quotes-section {
-    margin: 0 0.2rem;
-  }
-
-  #quotes-section .quote {
-    font-size: 1.2rem;
-  }
-
-  #quotes-section .quote-citation {
-    height: 5rem;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  #quotes-section .content {
-    padding: 1.875rem 0;
-  }
-  
-  #quotes-section .quote {
-    font-size: 1rem;
-    line-height: 0.8;
-    letter-spacing: 0.2rem;
-  }
-
-  #quotes-section .quote-citation {
-    height: 4rem;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #quotes-section .quote {
-    font-size: 1.5rem;
-    line-height: 0.8;
-    letter-spacing: 0.1rem;
-  }
-  
-  #quotes-section .quote-citation {
-    height: 4rem;
-    margin-right: 0.5rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #quotes-section .quote {
-    font-size: 1.2rem;
-  }
+  height: 7rem;
 }
 
 /* Footer Section*/
 footer {
   background-color: #9b9b9b;
-  padding: 1rem;
+  padding: 0 0.5rem;
   position: relative;
   top: 5rem;
   display: flex;
@@ -893,163 +330,29 @@ footer .copyright {
   flex-grow: 1;
 }
   
-.contact-list {
+.contact-list, #emailBox {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 1rem 0.5rem;
 }
 
-.contact-list ul {
-  display: flex;
+#emailBox {
+  margin: 0;
 }
   
-.contact-list li {
-  width: 3rem;
-  height: 3rem;
-  margin-left: 1.5rem;
-  display: inline-block;
-}
-
-#email {
-  width: 16rem;
-  font-size: 1.8rem;
-  margin: 0.6rem 1.5rem 0 0;
-}
-
-#emailPic {
-  margin-right: 0;
-}
-
 .contact-list img {
   width: 3rem;
   height: 3rem;
   border-radius: 4px;
+  margin-right: 1rem;
 }
 
-@media only screen and (max-width: 1300px) {
-  footer .copyright {
-    font-size: 1.3rem;
-  }
-
-  .contact-list img {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-  
-  #email {
-    font-size: 1.1rem;
-  }
+#email {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
 }
 
-@media only screen and (max-width: 1100px) {
-  footer .copyright {
-    font-size: 1.1rem;
-  }
-  
-  #email {
-    font-size: 1.5rem;
-  }
-}
-
-/* Tablet */
-@media only screen and (max-width: 1000px) {
-  footer .copyright {
-    font-size: 1rem;
-  }
-
-  #email {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  footer .copyright {
-    font-size: 0.9rem;
-  }
-
-  .contact-list img {
-    height: 2rem;
-    width: 2rem;
-  }
-  
-  #email {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  footer {
-    padding: 0.1rem;
-  }
-
-  footer .copyright {
-    font-size: 0.9rem;
-    font-weight: bolder ;
-    flex-grow: 1;
-  }
-
-  .contact-list li {
-    width: 1.8rem;
-    height: 1.8rem;
-    margin: 0 0.2rem;
-  }
-
-  .contact-list img {
-    height: 1.8rem;
-    border-radius: 4px;
-  }
-
-  #email {
-    width: 10rem;
-    font-size: 0.9rem;
-    padding-top: 1rem;
-    margin-right: 0;
-  }
-
-  #emailPic {
-    margin-right: 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  footer {
-    padding: 0.1rem;
-    max-height: 4rem;
-  }
-
-  footer .copyright {
-    font-size: 1.2rem;
-  }
-
-  .contact-list li {
-    width: 2rem;
-    height: 2rem;
-    margin: 0 0.2rem;
-  }
-
-  .contact-list img {
-    height: 2rem;
-  }
-
-  #email {
-    font-size: 1.3rem;
-    margin-right: 5rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  footer {
-    flex-direction: column-reverse;
-    max-height: fit-content;
-    padding: 0;
-  }
-
-  footer .copyright {
-    font-size: 1rem;
-    margin: 0;
-  }
-
-  #email {
-    font-size: 1.1rem;
-  }
+#emailPic {
+  margin-right: 0;
 }
