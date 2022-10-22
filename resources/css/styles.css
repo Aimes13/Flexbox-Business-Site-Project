@@ -46,7 +46,15 @@ html {
     margin: 0 auto;
     top: 5.3125rem; /* To offset for fixed header. */
 }
-  
+
+#portfolio-section, #photographer-section, #quotes-section, footer {
+  top: 5rem;
+}
+
+#about-section {
+  top: 3.5rem;
+}
+
 .center {
     text-align: center;
 }
@@ -60,13 +68,52 @@ html {
     display: block;
 }
 
-span {
-    font-size: 3.8rem;
-    font-weight: lighter;
-}
-
 h1 {
   font-size: 2.5rem;
+}
+
+/* Laptop */
+@media only screen and (max-width: 1400px) {
+  #portfolio-section, #photographer-section, #quotes-section, footer {
+    top: 2rem;
+  }
+  
+  #about-section {
+    top: 1.8rem;
+  } 
+}
+
+@media only screen and (max-width: 1200px) {
+  #portfolio-section, #photographer-section, #quotes-section, footer {
+    top: 0.5rem;
+  }
+  
+  #about-section {
+    top: 0.3rem;
+  } 
+}
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+  #portfolio-section, #photographer-section, #quotes-section, footer {
+    top: 0;
+  }
+  
+  #about-section {
+    top: -0.5rem;
+  } 
+}
+
+@media only screen and (max-width: 900px) {
+  #about-section {
+    top: -1rem;
+  } 
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 /* Header */
@@ -92,6 +139,8 @@ header .logo {
   justify-content: flex-start;
   align-items: center;
   height: 8rem;
+  font-size: 3.8rem;
+  font-weight: lighter;
   width: 40%;
   color: whitesmoke;
 }
@@ -127,8 +176,93 @@ nav a:visited    {
   color: lavender;
 }
 
-header .mobile, .tablet, .companylogo {
+#img2, header .mobile, .tablet, .companylogo {
   display: none;
+}
+
+/* Laptop */
+@media only screen and (max-width: 1400px) {
+  header {
+    width: 98.8%;
+  }
+
+  header .logo, header .logo img {
+    font-size: 3.4rem;
+    height: 6rem;
+  }
+
+  nav a {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 98.6%;
+  }
+
+  header .logo, header .logo img {
+    font-size: 2.9rem;
+    height: 4.5rem;
+  }
+
+  nav a {
+    font-size: 1.7rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+  header .logo, header .logo img {
+    font-size: 2.7rem;
+    height: 3.8rem;
+  }
+
+  nav a {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    width: 98.3%;
+  }
+
+  header .logo, header .logo img {
+    font-size: 2.4rem;
+    height: 3.3rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header span, #img1 {
+    display: none;
+  }
+
+  header {
+    width: 98%;
+  }
+
+  #img2 {
+    display: block;
+    height: 4rem;
+  }
+
+  .desktop {
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  nav a:hover {
+    font-size: 1.4rem;
+  }
 }
 
 /* About Section */
@@ -137,7 +271,6 @@ header .mobile, .tablet, .companylogo {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 3.5rem;
   background-image: url(https://images.unsplash.com/photo-1483932981361-26ddd9a5d30a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
   background-repeat: no-repeat;
   background-position: center;
@@ -166,9 +299,7 @@ header .mobile, .tablet, .companylogo {
   align-content: center;
   justify-content: space-around;
   margin: 1rem 0.5rem;
-  padding: 2rem 0;
-  height: 10rem;
-  width: auto;
+  padding: 1rem 0;
 }
   
 .list li {
@@ -180,10 +311,21 @@ header .mobile, .tablet, .companylogo {
   background-color: whitesmoke;
 }
 
+@media only screen and (max-width: 800px) {
+  #about-section .quote, #about-section span, .list li {
+    font-size: 1.2rem;
+  }
+
+  .list li {
+    width: 7rem;
+    height:5rem;
+    padding: 1rem;
+  }
+}
+
 /* Portfolio Section */
 #portfolio-section {
   position: relative;
-  top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,10 +389,88 @@ header .mobile, .tablet, .companylogo {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 2000px) {
+  #box1 .feature {
+    height: 62rem;
+  }
+  
+  #box2 .feature {
+    height: 44rem;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  #box1 .feature {
+    height: 58rem;
+  }
+  
+  #box2 .feature {
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  #box1 .feature {
+    height: 52rem;
+  }
+  
+  #box2 .feature {
+    height: 36rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #box1 .feature {
+    height: 47rem;
+  }
+  
+  #box2 .feature {
+    height: 34rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #box1 .feature {
+    height: 40rem;
+  }
+  
+  #box2 .feature {
+    height: 28rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+  #box1 .feature {
+    height: 39rem;
+  }
+  
+  #box2 .feature {
+    height: 26rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #box1 .feature {
+    max-height: 28rem;
+  }
+  
+  #box2 .feature {
+    max-height: 20rem;
+  }
+
+  .feature h2, .feature h3 {
+    font-size: 1.7rem;
+  }
+    
+  .feature h3 {
+    font-size: 1.2rem;
+  }
+}
+
 /* Photographer Section */
 #photographer-section {
   position: relative;
-  top: 5rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -283,12 +503,31 @@ header .mobile, .tablet, .companylogo {
   display: flex;
   justify-content: center;
 }
+
+/* Laptop */
+@media only screen and (max-width: 1200px) {
+  #photographer-section .center div {
+    font-size: 1.4rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 900px) {
+  #photographer-section .center div {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #photographer-section .center div {
+    font-size: 1.1rem;
+  }
+}
   
 /* Quotes Section */
 #quotes-section {
   background-color: #f3f3f3;
   position: relative;
-  top: 5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -311,12 +550,43 @@ header .mobile, .tablet, .companylogo {
   height: 7rem;
 }
 
+/* Laptop */
+@media only screen and (max-width: 1200px) {
+  #quotes-section .quote {
+    font-size: 1.3rem;
+  }
+  
+  #quotes-section .quote-citation {
+    height: 5.5rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+  #quotes-section .quote {
+    font-size: 1rem;
+  }
+  
+  #quotes-section .quote-citation {
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #quotes-section .quote {
+    font-size: 0.7rem;
+  }
+  
+  #quotes-section .quote-citation {
+    height: 3rem;
+  }
+}
+
 /* Footer Section*/
 footer {
   background-color: #9b9b9b;
   padding: 0 0.5rem;
   position: relative;
-  top: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -355,4 +625,48 @@ footer .copyright {
 
 #emailPic {
   margin-right: 0;
+  margin-bottom: 0.4rem;
+}
+
+/* Laptop */
+@media only screen and (max-width: 1200px) {
+  footer .copyright {
+    font-size: 1.2rem;
+  }
+
+  .contact-list img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  
+  #email {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+  footer .copyright {
+    font-size: 1rem;
+  }
+
+  .contact-list img {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer .copyright {
+    font-size: 0.8rem;
+  }
+
+  .contact-list img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  #email {
+    font-size: 0.9rem;
+  }
 }
