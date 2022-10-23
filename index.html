@@ -18,9 +18,9 @@
         <div class="content">
           <div class="logo">
             <img id="img1" src="./resources/logos/newed.jpg" alt="">
-            <img id="img2" src="./resources/logos/Picture2-black.jpg" alt="">
             <span>Pello Photography</span>  
-          </div>          
+          </div>
+          <img id="img2" src="./resources/logos/Picture2-black.jpg" alt="">          
           <nav class="desktop">
             <ul>
               <li><a href="#about-section">About</a></li>
@@ -30,13 +30,15 @@
             </ul>
           </nav>
           <div class="companylogo">
-            <button><img onclick="myFunction()" id="menuButton" class="dropmenu" src="https://icon-library.com/images/white-menu-icon/white-menu-icon-4.jpg" alt=""></button>
+            <img id="img3" src="./resources/logos/Picture2-black.jpg" alt="">
+            <button id="menuButton" class="dropmenu"><img src="https://icon-library.com/images/white-menu-icon/white-menu-icon-4.jpg" alt=""></button>
             <div id="menu" class="mobile">
               <a href="#about-section">About</a>
               <a href="#portfolio-section">Portfolio</a>
               <a href="#photographer-section">The Photographer</a>
               <a href="#contact-section">Contact</a>
             </div>
+          </div>
         </div>
       </div>
     </header>
@@ -179,10 +181,11 @@
           <div class="contact-list">
             <a href="https://www.facebook.com/PAPhotographee" target=" "><img src="./resources/logos/facebook_logo.png" alt=""></a>
             <a href="https://www.twitter.com/PAPhotographee" target=" "><img src="./resources/logos/About_logoUsage.png" alt=""></a>
-            <div id="emailBox">
-              <img id="emailPic" src="./resources/logos/Email_256x256-32.png" alt="">
-              <span id="email">pa.photographee@gmail.com</span>
-            </div>
+            <form action="mailto:pa.photographee@gmail.com" method="POST">
+              <div id="emailBox">
+                <button type="submit" class="btn" value="Send"><img id="emailPic" src="./resources/logos/Email_256x256-32.png" alt=""></button>
+              </div>
+            </form>
           </div>
         </div>
       </footer>
