@@ -295,13 +295,51 @@ nav a:visited    {
     display: none;
   }
 
-  .companylogo {
-    display: flex;
-    height: 3.5rem;
-  }
-
   header {
     width: 97.5%;
+  }
+
+  .companylogo {
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .companylogo:hover .mobile {
+    display: flex;
+  }
+
+  #menuButton {
+    height: 3.5rem;
+    cursor: pointer;
+  }
+
+  #menuButton:focus {
+    border: 2px solid white;
+  }
+
+  .mobile {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(67,78,94, 1);
+    overflow: auto;
+    z-index: 1;
+    width: 97.5%;
+  }
+
+  .mobile a {
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 1px solid whitesmoke;  
+  }
+
+  .show {
+    display: flex;
   }
 }
 
