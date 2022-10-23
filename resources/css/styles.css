@@ -70,6 +70,7 @@ html {
 
 h1 {
   font-size: 2.5rem;
+  text-align: center;
 }
 
 /* Laptop */
@@ -113,6 +114,12 @@ h1 {
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.8rem;
   }
 }
 
@@ -265,6 +272,57 @@ nav a:visited    {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  header span, #img1 {
+    display: none;
+  }
+
+  header {
+    width: 97.8%;
+  }
+
+  #img2 {
+    height: 3.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+
+  .companylogo {
+    display: flex;
+    height: 3.5rem;
+  }
+
+  header {
+    width: 97.5%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    width: 97%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  header {
+    width: 95%;
+  }
+}
+
 /* About Section */
 #about-section {
   display: flex;
@@ -320,6 +378,32 @@ nav a:visited    {
     width: 7rem;
     height:5rem;
     padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .list ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }  
+  
+  .list li {
+    width: 10rem;
+    height: 5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #about-section .quote {
+    font-size: 1rem;
+  }
+
+  #about-section .center {
+    padding: 0;
+    width: 90%;
   }
 }
 
@@ -468,6 +552,26 @@ nav a:visited    {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  #box1, #box2 {
+    flex-direction: column;
+  }
+
+  #box1 .feature, #box2 .feature {
+    max-height: fit-content;
+  }
+  
+  #box1, #box2, #box3 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #box1, #box2, #box3 {
+    width: 100%;
+  }
+}
+
 /* Photographer Section */
 #photographer-section {
   position: relative;
@@ -521,6 +625,37 @@ nav a:visited    {
 @media only screen and (max-width: 800px) {
   #photographer-section .center div {
     font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #photographer-section .center {
+    flex-direction: column;
+  }
+  
+  #photographer-section .center div {
+    font-size: 1.3rem;
+    margin: 0;
+    width: 50%;
+  }
+
+  #photographer-section img {
+    height: 16rem;
+    width: 16rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #photographer-section .center div {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #photographer-section img {
+    height: 14rem;
+    width: 14rem;
   }
 }
   
@@ -579,6 +714,51 @@ nav a:visited    {
   
   #quotes-section .quote-citation {
     height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #quotes-section .quote {
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  #quotes-section .quote-citation {
+    height: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #quotes-section .quote {
+    font-size: 0.6rem;
+  }
+  
+  #quotes-section .quote-citation {
+    height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #quotes-section {
+    justify-content: center;
+  }
+  
+  #quotes-section .quote {
+    font-size: 0.6rem;
+  }
+  
+  #quotes-section .quote-citation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #quotes-section .quote {
+    font-size: 0.4rem;
+  }
+
+  #quotes-section .content {
+    padding: 0.5rem 0;
   }
 }
 
@@ -668,5 +848,56 @@ footer .copyright {
 
   #email {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-list img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #email {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .copyright {
+    font-size: 0.5rem;
+  }
+
+  #email {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .copyright, #email {
+    font-size: 0.5rem;
+  }
+
+  .contact-list img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  footer .copyright {
+    font-size: 0.5rem;
+  }
+
+  .contact-list img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  #emailPic {
+    margin-bottom: 0;
+  }
+
+  #email {
+    display: none;
   }
 }
